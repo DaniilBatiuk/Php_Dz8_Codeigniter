@@ -1,0 +1,47 @@
+CRITICAL - 2023-07-11 16:34:14 --> Array to string conversion
+in APPPATH\Controllers\Home.php on line 21.
+ 1 APPPATH\Controllers\Home.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->cities()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Install\\OpenServer\\OpenServer\\domains\\ciexample1\\public\\index.php')
+CRITICAL - 2023-07-11 16:35:27 --> Undefined array key "city"
+in APPPATH\Controllers\Home.php on line 21.
+ 1 APPPATH\Controllers\Home.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->cities()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Install\\OpenServer\\OpenServer\\domains\\ciexample1\\public\\index.php')
+CRITICAL - 2023-07-11 17:29:52 --> view(): Argument #2 ($data) must be of type array, null given, called in E:\Install\OpenServer\OpenServer\domains\ciexample1\app\Controllers\Home.php on line 37
+in SYSTEMPATH\Common.php on line 1168.
+ 1 APPPATH\Controllers\Home.php(37): view()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->city()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Install\\OpenServer\\OpenServer\\domains\\ciexample1\\public\\index.php')
+ERROR - 2023-07-11 17:36:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '// JOIN Countries Co ON Ci.CountryId = Co.Id WHERE Ci.Id = '3'' at line 2 in E:\Install\OpenServer\OpenServer\domains\ciexample1\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Install\OpenServer\OpenServer\domains\ciexample1\system\Database\MySQLi\Connection.php(295): mysqli->query()
+#1 E:\Install\OpenServer\OpenServer\domains\ciexample1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 E:\Install\OpenServer\OpenServer\domains\ciexample1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 E:\Install\OpenServer\OpenServer\domains\ciexample1\app\Controllers\Home.php(38): CodeIgniter\Database\BaseConnection->query()
+#4 E:\Install\OpenServer\OpenServer\domains\ciexample1\system\CodeIgniter.php(932): App\Controllers\Home->city()
+#5 E:\Install\OpenServer\OpenServer\domains\ciexample1\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#6 E:\Install\OpenServer\OpenServer\domains\ciexample1\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#7 E:\Install\OpenServer\OpenServer\domains\ciexample1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 E:\Install\OpenServer\OpenServer\domains\ciexample1\system\Commands\Server\rewrite.php(47): require_once('E:\\Install\\Open...')
+#9 {main}
+CRITICAL - 2023-07-11 17:36:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '// JOIN Countries Co ON Ci.CountryId = Co.Id WHERE Ci.Id = '3'' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH\Controllers\Home.php(38): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->city()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Install\\OpenServer\\OpenServer\\domains\\ciexample1\\public\\index.php')
